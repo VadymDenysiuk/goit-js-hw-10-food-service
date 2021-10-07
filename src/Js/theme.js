@@ -6,6 +6,8 @@ const Theme = {
 const bodyRef = document.querySelector('body')
 const checkboxRef = document.querySelector('.theme-switch__toggle')
 
+bodyRef.classList.add(Theme.LIGHT)
+
 checkboxRef.addEventListener('click', onCheckboxRef)
 function onCheckboxRef() {
   if(bodyRef.classList.contains(Theme.DARK)) {
